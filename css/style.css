@@ -1,0 +1,31 @@
+html{font-size: 16px; scroll-behavior: smooth;}
+html body { font-family: 'NexaRegular'; -webkit-font-smoothing: antialiased; overflow-x: hidden; width: 100%; position: relative; min-height: 100%; }
+@font-face {
+  font-family: 'NexaRegular';
+  src: url('../fonts/NexaRegular/NexaRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/NexaRegular/NexaRegular.otf')  format('opentype'),
+	   url('../fonts/NexaRegular/NexaRegular.woff') format('woff'), url('../fonts/NexaRegular/NexaRegular.ttf')  format('truetype'), url('../fonts/NexaRegular/NexaRegular.svg#NexaRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p{font-size:1rem;margin:10px 0}
+ul{margin:0;padding:0}
+li{list-style:none}
+.banner_section h1{font-weight:700;padding:15px 0;font-size:4rem}
+a.navbar-brand{padding-bottom:30px;margin-right: 0;}
+.banner_section li span{padding-right:10px}
+nav.navbar{justify-content:center}
+.banner_section h1, .banner_section p, .banner_section li{color:#fff;}
+a, a:hover{text-decoration: none;}
+a.navbar-brand img {width: 400px;}
+.banner_section {position: relative; background: url(../images/bnr.jpg) no-repeat center center; background-size: cover; height: 100vh; display: flex; align-items:center; text-align: center; z-index: 1;}
+.banner_section:before { content: ""; position: absolute; width: 100%; height: 100%; z-index: -1; background: #000000a8; }
+.banner_section li{display: inline-block;    font-size: 1.3rem;padding: 0 10px;}
+footer{position: absolute;bottom: 0; left: 0; width: 100%; text-align: center;color: #fff;z-index: 2}
+
+@media(max-width: 575px){
+  a.navbar-brand img { width: 100%; } 
+  .banner_section li { font-size: 13px; padding: 0 5px; } 
+  .banner_section li span { padding-right: 2px; } 
+  .banner_section h1 { font-size: 2.3rem; } }
+}

@@ -1,0 +1,253 @@
+<?php 
+require_once 'classes/configure.php'; 
+include(DIR_BASE.'user_header.php');
+if(!isset($userId) || $userId <= 0){
+	$_SESSION['message_type'] = 'error';
+	$_SESSION['message'] = 'Please login first!';
+	header('Location: '.URL_BASE."login");
+	exit;
+}
+$UserData = fetchqry('*',TB_USER,array("id="=>$userId));
+?>
+<div class="dashboard-main">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="owallet-wrap">
+					<?php require_once DIR_BASE.'sidebar.php'; ?>
+					<div class="owallet-right main">
+						<div class="top-nav">
+							<div class="owt-left">
+								<h5>Hi <?php echo $UserData['firstname'].' '.$UserData['lastname'];?> Welcome Back!</h5>
+								<!--<form>
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="search">
+										<span><i class="fa fa-search"></i></span>
+									</div>
+								</form>-->
+							</div>
+							<!--<div class="owt-right">
+								<a href="javascript:;" class="upload"><span><i class="fas fa-upload"></i></span>sell
+								your artwork</a>
+								<div class="owt-option">
+									<a href="javascript:;">
+										<img src="<?php echo URL_BASE;?>images/wallet/bell-icol.png" />
+									</a>
+									<a href="javascript:;">
+										<img src="<?php echo URL_BASE;?>images/wallet/options-icon.png" />
+									</a>
+									<a href="javascript:;">
+										<i class="fas fa-user"></i>
+									</a>
+								</div>
+							</div>-->
+                                                        <br />
+								<span style="color: white;margin-top: 20px;font-size: 20px;"><?php echo $UserData['wallet'];?></span>
+
+						</div>
+						<div class="owl-body oxwallet-body">
+							<div class="owallet-offer">
+								<div class="row">
+									<div class="col-md-4 col-sm-6">
+										<div class="debit-card">
+											<figure>
+												<img src="<?php echo URL_BASE;?>images/wallet/debitcard.png" alt="">
+											</figure>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-6">
+										<a href="#" class="oxwallet-card" data-toggle="modal"
+										data-target="#cardmodal">
+										<i class="fa fa-plus"></i>
+										<span>Add New Card</span>
+									</a>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="app-stocks">
+										<div class="oxwalllet-as">downloading our<span> Ox Wallet app
+										only</span></div>
+										<div class="app-subscribe">
+											<a href="javascript:;">
+												<img src="<?php echo URL_BASE;?>images/wallet/google-play.png" alt="" />
+											</a>
+											<a href="javascript:;">
+												<img src="<?php echo URL_BASE;?>images/wallet/app-store.png" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="owallet-operation">
+							<h6>Send OX</h6>
+							<div class="owallet-btn">
+								<div class="ow-send">
+									<a href="#"><i class="fas fa-arrow-up"></i>Send</a>
+								</div>
+								<div class="ow-address">
+									<a href="#" data-toggle="modal"
+									data-target="#addressmodal"><i class="fa fa-plus"></i>Add an Address</a>
+								</div>
+							</div>
+						</div>
+						<div class="owallet-table">
+							<h5>History</h5>
+							<div class="ow-transation-title">
+								<p>Recent transactions</p>
+								<p class="orange">More</p>
+							</div>
+							<div class="owt-table">
+								<table class="table ">
+									<thead>
+										<th>Price Ox</th>
+										<th>Amount USD</th>
+										<th></th>
+										<th>Time</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="green"><i
+												class="fas fa-sort-up"></i></span>0.259842</td>
+												<td>0.068241</td>
+												<td class="green">Buy</td>
+												<td>12 Mins</td>
+											</tr>
+											<tr>
+												<td><span class="green"><i
+													class="fas fa-sort-up"></i></span>0.347204</td>
+													<td>0.002482</td>
+													<td class="green">Buy</td>
+													<td>10 Mins</td>
+												</tr>
+												<tr>
+													<td><span class="green"><i
+														class="fas fa-sort-up"></i></span>0.024842</td>
+														<td>0.086242</td>
+														<td class="green">Buy</td>
+														<td>27 Mins</td>
+													</tr>
+													<tr>
+														<td><span class="red"><i
+															class="fas fa-sort-down"></i></span>0.272418</td>
+															<td>0.001871</td>
+															<td class="red">Sell</td>
+															<td>32 Mins</td>
+														</tr>
+														<tr>
+															<td><span class="red"><i
+																class="fas fa-sort-down"></i></span>0.272418</td>
+																<td>0.001871</td>
+																<td class="red">Sell</td>
+																<td>32 Mins</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+											</div>
+
+											<!-- Modal -->
+											<div class="modal fade" id="cardmodal" tabindex="-1" role="dialog"
+											aria-labelledby="cardmodalLabel" aria-hidden="true">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="cardmodalLabel">Add New Card</h5>
+														<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<form action="insert_card.php" method="post">
+														<div class="row">
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="text" class="form-control" name="full_name" placeholder="Full Name">
+																</div>
+															</div>
+															<div class="col-md-12">
+																<div class="form-group">
+																	<input type="number" class="form-control" name="card_number" placeholder="Card Number">
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<input type="number" min="" class="form-control" name="expire_date" placeholder="MM / YY">
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group">
+																	<input type="number" class="form-control" name="cvv" placeholder="CVV">
+																</div>
+															</div>
+															<input type="number" name="user_id" value="{{$user_id}}" style="display: none" />
+															<div class="col-md-12">
+																<button type="submit" class="btn btn-orange"><i class="fa fa-plus"></i>To Wallet</button>
+															</div>
+														</div>
+													</form>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="modal fade" id="addressmodal" tabindex="-1" role="dialog"
+									aria-labelledby="addressmodalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="addressmodalLabel">Add New Address</h5>
+												<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="text" class="form-control addnewadd" placeholder="Address">
+															<div class="icons">
+																<img src="<?php echo URL_BASE;?>images/wallet/user2.png">
+																<img src="<?php echo URL_BASE;?>images/wallet/scan.png">
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="number" class="form-control addnewadd" placeholder="Amount">
+															<div class="avalue">
+																<span>OX</span>
+																<span class="orange">MAX</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<input type="password" class="form-control" placeholder="Password">
+														</div>
+													</div>
+													<p>Transaction Fee 0.00</p>
+
+													<div class="col-md-12">
+														<button class="btn btn-orange">Submit</button>
+													</div>
+												</div>
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+</html>

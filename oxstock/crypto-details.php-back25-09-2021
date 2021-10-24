@@ -1,0 +1,204 @@
+<?php
+
+require_once 'classes/configure.php'; 
+
+include('header.php'); 
+
+$code = isset($_GET['code']) && trim($_GET['code']) != '' ? trim($_GET['code']) : '';
+$data = array();
+
+function number_shorten($number, $precision = 3, $divisors = null) {
+
+    // Setup default $divisors if not provided
+    if (!isset($divisors)) {
+        $divisors = array(
+            pow(1000, 0) => '', // 1000^0 == 1
+            pow(1000, 1) => 'K', // Thousand
+            pow(1000, 2) => 'M', // Million
+            pow(1000, 3) => 'B', // Billion
+            pow(1000, 4) => 'T', // Trillion
+            pow(1000, 5) => 'Qa', // Quadrillion
+            pow(1000, 6) => 'Qi', // Quintillion
+        );    
+    }
+
+    // Loop through each $divisor and find the
+    // lowest amount that matches
+    foreach ($divisors as $divisor => $shorthand) {
+        if (abs($number) < ($divisor * 1000)) {
+            // We found a match!
+            break;
+        }
+    }
+
+    // We found our match, or there were no matches.
+    // Either way, use the last defined value for $divisor.
+    return number_format($number / $divisor, $precision) . $shorthand;
+}
+
+if($code != ''){
+	$api_key = '4d6309bd25541bc203a94472a080638a3d3d1b24';
+	$service_url     = 'https://api.nomics.com/v1/currencies/ticker?key='.$api_key.'&interval=1h,1d,7d&convert=USD&ids='.$code;
+	$curl = curl_init($service_url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($curl, CURLOPT_POST, false);
+	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+	$curl_response   = curl_exec($curl);
+	if (curl_errno($curl)) {
+		header('Location: index.php');
+		exit;
+	}
+	curl_close($curl);
+	$currencyData = json_decode($curl_response,true);
+	if(count($currencyData) > 0){
+		$data = $currencyData[0];
+	}
+	else{
+		header('Location: index.php');
+		exit;
+	}
+}
+else{
+	header('Location: index.php');
+	exit;
+}
+
+?>	
+
+    <!---------------------- end priching ---------------->
+
+    <section class="cript_dtls">
+
+        <div class="container">
+    		<h2><?php echo $data['id'];?></h2>
+    		<div class="list-group">
+    			<a href="javascript:void(0);" class="list-group-item">
+    				<img src="<?php echo $data['logo_url'];?>" height="50px" width="50px" alt="<?php echo $data['name'];?>">
+    				Name: <?php echo $data['name'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Rank: <?php echo $data['rank'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price: $<?php echo number_shorten($data['price'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price DateTime: <?php echo $data['price_date'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				High: $<?php echo number_shorten($data['high']);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				High Timestamp: <?php echo $data['high_timestamp'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Circulating Supply: <?php echo $data['circulating_supply'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Max Supply: $<?php echo number_shorten($data['max_supply'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Market Cap: $<?php echo number_shorten($data['market_cap'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Market Cap Dominance: <?php echo number_shorten($data['market_cap_dominance'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Num Exchanges: <?php echo $data['num_exchanges'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Num Pairs: <?php echo $data['num_pairs'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				First Candle: <?php echo $data['first_candle'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				First Trade: <?php echo $data['first_trade'];?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				First Order Book: <?php echo $data['first_order_book'];?>
+    			</a>
+    		</div>
+
+    		<h4 style="color: #fff;">Last Hour</h4>
+    		<div class="list-group">
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume: $<?php echo number_shorten($data['1h']['volume'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change: <?php echo number_shorten($data['1h']['price_change'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change Pct: <?php echo number_shorten($data['1h']['price_change_pct'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change: $<?php echo number_shorten($data['1h']['volume_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change Pct: <?php echo number_shorten($data['1h']['volume_change_pct'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Market Cap Change: $<?php echo number_shorten($data['1h']['market_cap_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Carket Cap Change Pct: <?php echo number_shorten($data['1h']['market_cap_change_pct'],3);?>
+    			</a>
+    		</div>
+
+    		<h4 style="color: #fff;">Last 24 Hours</h4>
+    		<div class="list-group">
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume: $<?php echo number_shorten($data['1d']['volume'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change: $<?php echo number_shorten($data['1d']['price_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change Pct: <?php echo number_shorten($data['1d']['price_change_pct'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change: $<?php echo number_shorten($data['1d']['volume_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change Pct: <?php echo number_shorten($data['1d']['volume_change_pct'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Market Cap Change: $<?php echo number_shorten($data['1d']['market_cap_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Carket Cap Change Pct: <?php echo number_shorten($data['1d']['market_cap_change_pct'],3);?>
+    			</a>
+    		</div>
+
+    		<h4 style="color: #fff;">Last 7 Days</h4>
+    		<div class="list-group">
+
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume: $<?php echo number_shorten($data['7d']['volume'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change: $<?php echo number_shorten($data['7d']['price_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Price Change Pct: <?php echo number_shorten($data['7d']['price_change_pct'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change: $<?php echo number_shorten($data['7d']['volume_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Volume Change Pct: <?php echo number_shorten($data['7d']['volume_change_pct'],3);?>%
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Market Cap Change: $<?php echo number_shorten($data['7d']['market_cap_change'],3);?>
+    			</a>
+    			<a href="javascript:void(0);" class="list-group-item">
+    				Carket Cap Change Pct: <?php echo number_shorten($data['7d']['market_cap_change_pct'],3);?>
+    			</a>
+    		</div>
+        </div>
+
+    </section>
+
+     <!---------------------- footer ---------------->
+
+<?php include('footer.php'); ?>

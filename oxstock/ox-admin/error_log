@@ -1,0 +1,41 @@
+[05-Jul-2018 23:19:51 America/Chicago] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/harshatilva/public_html/tradetrack/tadmin/forgot-password.php on line 2
+[05-Jul-2018 23:19:51 America/Chicago] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/harshatilva/public_html/tradetrack/tadmin/forgot-password.php on line 2
+[05-Jul-2018 23:19:51 America/Chicago] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/harshatilva/public_html/tradetrack/tadmin/forgot-password.php on line 2
+[05-Jul-2018 23:19:51 America/Chicago] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/harshatilva/public_html/tradetrack/tadmin/forgot-password.php on line 2
+[02-Oct-2018 01:31:09 America/Chicago] PHP Warning:  Unterminated comment starting line 96 in /home/harshatilva/public_html/skindustries/sk-admin/home.php on line 96
+[02-Oct-2018 01:31:09 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/harshatilva/public_html/skindustries/sk-admin/home.php:96) in /home/harshatilva/public_html/skindustries/sk-admin/classes/configure.php on line 3
+[02-Oct-2018 01:31:29 America/Chicago] PHP Warning:  Unterminated comment starting line 95 in /home/harshatilva/public_html/skindustries/sk-admin/home.php on line 95
+[02-Oct-2018 01:31:29 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/harshatilva/public_html/skindustries/sk-admin/home.php:95) in /home/harshatilva/public_html/skindustries/sk-admin/classes/configure.php on line 3
+[02-Oct-2018 01:31:58 America/Chicago] PHP Warning:  Unterminated comment starting line 94 in /home/harshatilva/public_html/skindustries/sk-admin/home.php on line 94
+[02-Oct-2018 01:31:58 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/harshatilva/public_html/skindustries/sk-admin/home.php:94) in /home/harshatilva/public_html/skindustries/sk-admin/classes/configure.php on line 3
+[02-Oct-2018 04:28:30 America/Chicago] PHP Warning:  Unterminated comment starting line 94 in /home/harshatilva/public_html/skindustries/sk-admin/inquiry_detail.php on line 94
+[02-Oct-2018 04:28:30 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/harshatilva/public_html/skindustries/sk-admin/inquiry_detail.php:94) in /home/harshatilva/public_html/skindustries/sk-admin/classes/configure.php on line 3
+[02-Oct-2018 04:29:15 America/Chicago] PHP Warning:  Unterminated comment starting line 91 in /home/harshatilva/public_html/skindustries/sk-admin/inquiry_detail.php on line 91
+[02-Oct-2018 04:29:15 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/harshatilva/public_html/skindustries/sk-admin/inquiry_detail.php:91) in /home/harshatilva/public_html/skindustries/sk-admin/classes/configure.php on line 3
+[29-Nov-2018 16:24:39 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:39 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:39 Etc/GMT] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:39 Etc/GMT] PHP Notice:  Undefined variable: _SESSION in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 64
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 7
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 7
+[29-Nov-2018 16:24:45 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 8
+[29-Nov-2018 16:26:14 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:26:14 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:26:14 Etc/GMT] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[29-Nov-2018 16:26:14 Etc/GMT] PHP Notice:  Undefined variable: _SESSION in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 64
+[30-Nov-2018 04:19:18 Etc/GMT] PHP Warning:  Unterminated comment starting line 95 in /home/skarcjlg/public_html/sk-admin/inquiry_detail.php on line 95
+[30-Nov-2018 04:20:02 Etc/GMT] PHP Warning:  Unterminated comment starting line 95 in /home/skarcjlg/public_html/sk-admin/inquiry_detail.php on line 95
+[30-Nov-2018 04:20:27 Etc/GMT] PHP Warning:  Unterminated comment starting line 95 in /home/skarcjlg/public_html/sk-admin/inquiry_detail.php on line 95
+[30-Nov-2018 04:23:53 Etc/GMT] PHP Warning:  Unterminated comment starting line 97 in /home/skarcjlg/public_html/sk-admin/inquiry_detail.php on line 97
+[30-Nov-2018 04:24:21 Etc/GMT] PHP Warning:  Unterminated comment starting line 97 in /home/skarcjlg/public_html/sk-admin/inquiry_detail.php on line 97
+[30-Nov-2018 04:35:08 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[30-Nov-2018 04:35:08 Etc/GMT] PHP Warning:  include(include/config.php): failed to open stream: No such file or directory in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[30-Nov-2018 04:35:08 Etc/GMT] PHP Warning:  include(): Failed opening 'include/config.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 2
+[30-Nov-2018 04:35:08 Etc/GMT] PHP Notice:  Undefined variable: _SESSION in /home/skarcjlg/public_html/sk-admin/forgot-password.php on line 64
+[02-Jul-2020 21:22:24 Australia/Sydney] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/kpve/oxstocks.com/new/ox-admin/functions/mysqlfunction.php on line 92
+[02-Jul-2020 21:22:24 Australia/Sydney] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/kpve/oxstocks.com/new/ox-admin/functions/mysqlfunction.php on line 92
+[02-Jul-2020 21:22:29 Australia/Sydney] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/kpve/oxstocks.com/new/ox-admin/functions/mysqlfunction.php on line 92
+[02-Jul-2020 21:22:29 Australia/Sydney] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home2/kpve/oxstocks.com/new/ox-admin/functions/mysqlfunction.php on line 92

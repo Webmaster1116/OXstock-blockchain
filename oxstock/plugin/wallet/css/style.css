@@ -1,0 +1,1767 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{font-size: 14px; font-weight: 400;font-family: 'Yantramanav', sans-serif; background-color: #181b25;}
+.btn.btn-orange{
+    background-color: #f7941e;
+    border-color: #f7941e;
+    color: #181b25;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 136px;
+    font-weight: 500;
+    height: 39px;
+    text-transform: capitalize;
+}
+
+/*--------------------- header -----------------*/
+/*----------  top bar --------*/
+header.header_menu .header_wal {
+    width: 72%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header.header_menu .row .col-md-12 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-bear {
+    padding: 8px 0;
+    width: 360px;
+    float: right;
+}
+.top-bear form {
+    text-align: right;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.top-bear .search {
+    background: #374258;
+    width: 100%;
+    max-width: 350px;
+    display: block;
+    position: relative;
+    margin-right: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px #37425878;
+}
+.top-bear form .search input[type="search"] {
+    width: 100%;
+    background: transparent;
+    box-shadow: unset;
+    border: 0;
+    padding: 7px 40px 7px 15px;
+    outline: 0 !important;
+    font-size: 16px;
+    color: #fff;
+}
+.top-bear .search .search_h {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top-bear .col-md-8 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-bear form select {
+    background: transparent;
+    border: 0;
+    padding: 7px 15px;
+    outline: 0 !important;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px #37425878;
+    background: #374258;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.top-bear form .search input::placeholder {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+/*------------------ end top bar ----------------------*/
+/*---------------- header -----------------------*/
+.header_wal .bg-light {
+    background: transparent !important;
+    padding-left: 0;
+}
+header.header_menu .container-fluid {
+    padding-right: 45px;
+    padding-left: 18px;
+}
+.navbar-light .navbar-toggler-icon {
+    filter: invert(10);
+}
+header {
+    background: #0f121b;
+}
+.header_wal .bg-light ul.navbar-nav li a {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff !important;
+    letter-spacing: 1px;
+    padding: 6px 10px;
+    position: relative;
+}
+.header_wal .bg-light ul.navbar-nav li a:hover {
+    color: #f7941e !important;
+}
+/*-------------------- end headser ---------------*/
+
+
+.btn.btn-orange:hover,
+.btn.btn-orange:active,
+.btn.btn-orange:focus{
+    background-color: transparent;
+    border-color: #f7941e;
+    color: #f7941e;
+    box-shadow: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+/* sidebar */
+#sidebar {
+    overflow: hidden;
+    z-index: 3;
+    border-right: 1px solid #2b3142;
+    padding:45px 0;
+    
+}
+#sidebar .list-group {
+    background-color: #181b25;
+    min-height: 100vh;
+    padding: 0 17px 0 0;
+}
+#sidebar i {
+    margin-right: 6px;
+}
+
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #181b25;
+    border: none;
+    color: #EEE;
+    padding: 14px 22px;
+    font-size: 14px;
+   margin: 0 0 5px 0;
+}
+#sidebar .list-group-item i{
+    margin-right: 0px;
+    font-size: 18px;
+    color: #f7941e;
+}
+.dashboard-main #sidebar a.list-group-item.active i{
+    color: #2b3142;
+}
+
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item  {
+  padding-left: 20px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item {
+  padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+  padding-left: 40px;
+}
+
+
+.dashboard-main a.logo{
+    width: 160px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    background-color: #181b25;
+    padding: 0 0 75px;
+}
+.dashboard-main a.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.dashboard-main a img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.dashboard-main a.list-group-item span {
+    font-size: 14px;
+    padding-left: 10px;
+    color: #b5b7ca;
+}
+.dashboard-main #sidebar a.list-group-item.active {
+    background-color: #f7941e;
+    color: #27273b;
+    border: navajowhite;
+    border-radius: 10px;
+}
+.dashboard-main #sidebar a.list-group-item.active span{
+    color: #27273b;
+}
+.dashboard-main .owallet-wrap .owallet-left{
+    width: calc(100% - 81%);
+}
+.dashboard-main .owallet-wrap{
+   position: relative;
+   display: flex;
+}
+.dashboard-main .owallet-right {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin:0 0 100px
+}
+.owallet-right .top-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 70px 30px;
+    flex-wrap: wrap;
+}
+.owallet-right .owt-left{
+    position: relative;
+    display: flex;
+    margin-right: 85px;
+    align-items: center;
+}
+.owallet-right .owl-body{
+    padding: 0 0px 0 30px;
+}
+.owallet-right .owt-left h5{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 0;
+    max-width: 140px;
+    margin-right: 135px;
+}
+.owallet-right .owt-left form .form-group{
+    margin-bottom: 0;
+}
+.owallet-right .owt-left form .form-control:focus{
+    border-color: #f7941e;
+}
+.owallet-right .owt-left form .form-control{
+    background-color: #2b3142;
+    border-color: #2b3142;
+    color: #aeb0c3;
+    font-size: 16px;
+    line-height: 23px;
+    width: 350px;
+    border-radius: 10px;
+    height: 52px;
+    padding: 20px 50px 20px 20px;
+    position: relative;
+    display: inline-block;
+}
+.owt-left form .form-group span{
+    position: absolute;
+    color: #f7941e;
+    top: 18px;
+    right: 23px;
+}
+form .form-control:focus,
+form .form-control:active{
+    outline: none;
+    box-shadow: none;
+}
+.owallet-right .owt-right {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.owallet-right .owt-right a.upload:hover{
+   border: 1px solid #f7941e;
+}
+.nft-feature-main .btn-orange.see-nf-btn{
+    border-color: #f7941e;
+}
+.owallet-right .owt-right a.upload{
+    background-color: #2b3142;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 29px;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.owallet-right .owt-right a span{
+    padding-right: 10px;
+}
+.owallet-right .owt-right .owt-option{
+    position: relative;
+    display: flex;
+}
+.owallet-right .owt-right .owt-option a {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+    line-height: 43px;
+    text-align: center;
+    align-items: center;
+    color: #f7941e;
+}
+.owallet-right .owt-right .owt-option a:last-child{
+    margin-right: 0;
+}
+.owallet-right .owt-right .owt-option a img {
+    width: 16px;
+    height: auto;
+    object-fit: cover;
+}
+.owallet-right .owallet-offer{
+    position: relative;
+    margin-bottom: 40px;
+}
+.owallet-right .owallet-offer .discover-part{
+    width: 100%;
+    color: #fff;
+    background-image: url('../images/1.png');
+    background-size: cover;
+    height: 170px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.owallet-right .owallet-offer .debit-card{
+    position: relative;
+}
+.owallet-right .owallet-offer .debit-card figure{
+    height: 170px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.owallet-right .owallet-offer .debit-card figure img{
+    object-fit: fill;
+}
+.owallet-right .owallet-offer .join-part{
+    width: 100%;
+    color: #fff;
+    background-image: url('../images/2.png');
+    background-size: cover;
+    height: 170px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 15px;
+}
+.owallet-right .owallet-offer .app-stocks{
+    width: 100%;
+    color: #fff;
+    background-image: url('../images/mobile-bg.png');
+    background-size: cover;
+    position: relative;
+    padding: 10px 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+}
+.owallet-right .owallet-offer .app-stocks::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 150px;
+    bottom: -40px;
+    right: -15px;
+    background-image: url('../images/mobile2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.owallet-offer .app-stocks .app-subscribe{
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+.owallet-offer .app-stocks .app-subscribe a{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+}
+.owallet-offer .discover-part p{
+    font-size: 10px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.owallet-offer .discover-part h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.owallet-offer .join-part h4{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.owallet-offer .app-stocks h4{
+    color: #181b25;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+/* nfi feature section */
+.owallet-right .nft-feature-main{
+    position: relative;
+}
+.owallet-right .nft-feature-main h2{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.nft-feature-main .nft-feature-list{
+    position: relative;
+    margin-bottom: 35px;
+}
+.nft-feature-main .nft-feature-list .nf-list-item{
+    position: relative;
+    background-color: #30323b;
+    padding: 20px;
+    border-radius: 15px;
+}
+.nft-feature-list .nf-list-item .nfli-top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.nf-list-item .nfli-top .nfi-detail p{
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+.nf-list-item .nfli-top .nfi-detail span{
+    color: #b5b7ca;
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.nf-list-item .nfli-top a,
+.nf-list-item .nfli-top span{
+    color: #b5b7ca;
+    font-size: 12px;
+    line-height: 20px;
+}
+.nf-list-item .nfli-top a span{
+    margin-left: 5px;
+}
+.nf-list-item .nfi-middle .nfi-item-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    border-radius: 15px;
+}
+.nf-list-item .nfi-middle .nfi-item-image img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.nf-list-item .nfi-middle {
+    position: relative;
+}
+.nf-list-item .nfi-middle .nfim-top-info{
+    position: absolute;
+    display: flex;
+    top: 20px;
+    left: 10px;
+    flex-wrap: wrap;
+}
+.nf-list-item .nfi-middle .nfim-top-info a{
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+    color: #27273bc4;
+    position: relative;
+    background-color: #d0cab385;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.nf-list-item .nfi-middle .nfim-top-info .countdown {
+    z-index: 2;
+    color: #27273b;
+    background-color: #d0cab385;
+    top: 0;
+    left: 20px;
+    display: flex;
+    padding: 3px 10px;
+    border-radius: 50px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+.nf-list-item .nfi-bottom .bid-detail{
+    position: relative;
+}
+.nfi-bottom .bid-detail span {
+    color: #b5b7ca;
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.nfi-bottom .bid-detail p {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.nfi-bottom .nfi-profile{
+    bottom: 45px;
+    position: absolute;
+    display: block;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    border: 4px solid #fff;
+    overflow: hidden;
+    right: 35px;
+}
+.nfi-bottom .uname{
+    text-align: right;
+    color: #fff;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+    float: right;
+    margin-top: -22px;
+    margin-right: 7px;
+}
+ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nfi-bottom .check-icon{
+    position: absolute;
+    display: block;
+    bottom: 72px;
+    right: 34px;
+    font-size: 15px;
+    width: 15px;
+    height: auto;
+}
+#sidebarToggle {
+   display: none;
+}
+/* oxwallet */
+.owl-body.oxwallet-body .oxwallet-card{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 170px;
+    border: 1px solid #f7941e;
+    border-radius: 15px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.owl-body.oxwallet-body .oxwallet-card i{
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50%;
+    color: #f7941e;
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+.owl-body.oxwallet-body .oxwallet-card span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.owl-body.oxwallet-body .app-stocks .oxwalllet-as{
+    position: relative;
+    display: block;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+}
+.owl-body.oxwallet-body .app-stocks .oxwalllet-as span{
+    color: #333;
+    display: block;
+}
+.owl-body.oxwallet-body .owallet-operation{
+    position: relative;
+    margin-bottom: 67px;
+}
+.owl-body.oxwallet-body .owallet-operation h6{
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.owl-body.oxwallet-body .owallet-operation .owallet-btn{
+    position: relative;
+    display: flex;
+}
+.owallet-operation .owallet-btn a{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.owallet-operation .owallet-btn a i{
+    width: 70px;
+    height: 70px;
+    background-color: #00db95;
+    text-align: center;
+    align-items: center;
+    line-height: 70px;
+    border-radius: 15px;
+    font-size: 27px;
+    color: #fff;
+    margin-right: 20px;
+}
+.owallet-operation .owallet-btn .ow-address a{
+    margin: 0;
+}
+.owallet-operation .owallet-btn .ow-address i{
+    background-color: #f7941e;
+}
+.owallet-table h5{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.oxwallet-body .owallet-table table{
+    width: 100%;
+    color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 0;
+}
+.ow-transation-title{
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3a3c45;
+    padding: 23px 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+}
+.ow-transation-title p{
+    margin-bottom: 0;
+}
+.orange{
+    color: #f7941e;
+}
+.owallet-table .owt-table{
+    position: relative;
+    display: block;
+    padding: 15px 10px 0;
+    background-color: #30323b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.owallet-table .owt-table table thead tr{
+    background-color: #30323b;
+}
+.owallet-table .owt-table table tbody tr{
+    background-color: #3a3c45;
+}
+.owallet-table .owt-table table tr td,
+.owallet-table .owt-table table tr th{
+    border: none;
+    padding: 20px 10px;
+}
+.owallet-table .owt-table table thead tr th{
+    padding: 0 10px;
+}
+.owallet-table .owt-table table tr td:nth-child(1),
+.owallet-table .owt-table table tr th:nth-child(1){
+    width: 70%;
+} 
+.owallet-table .owt-table table tr span{
+    font-size: 8px;
+    padding-right: 5px;
+}
+.owallet-table .owt-table table tr td:nth-child(1),
+.owallet-table .owt-table table tr th:nth-child(1){
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.owallet-table .owt-table table tr td:last-child,
+.owallet-table .owt-table table tr th:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.green{
+    color: #1abcb0;
+}
+.red{
+    color: #e34c4c;
+}
+
+
+
+
+/*----bb---*/
+
+
+.amount-wrapper input {
+    width: 100% !important;
+    max-width: 100%;
+    background: transparent;
+    border: 0;
+    color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid #6a6a6a;
+}
+
+form#payment-form label {
+    width: 100%;
+}
+.braintree-large-button {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.modal-body .braintree-option.braintree-option__card {
+    background: transparent !important;
+}
+.modal-body .pay_button {
+    background-color: #f7941e;
+    border-color: #f7941e;
+    color: #181b25;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 136px;
+    font-weight: 500;
+    height: 39px;
+    text-transform: capitalize;
+}
+
+
+.modal-body .pay_button:hover {
+    background: transparent;
+    color: #f7941e;
+}
+
+
+/*----bb---*/
+
+
+
+
+
+
+/* setting */
+
+
+.dashboard-main .owallet-right .ow-tab .nav-pills li.nav-item a:hover,
+.dashboard-main .owallet-right .ow-tab .nav-pills li.nav-item.active a {
+    background: transparent;
+    color: #f7941e;
+}
+
+
+.owl-body .ow-tab{
+    position: relative;
+}
+.owl-body .ow-tab .nav-pills .nav-link.active, 
+.owl-body .ow-tab  .nav-pills .show>.nav-link{
+    background-color: unset;
+    color: #f7941e;
+}
+.ow-tab .nav-pills .nav-link {
+    border-radius: .25rem;
+    color: #ffffff91;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-right: 80px;
+    padding: 0;
+    transition: all ease-in-out 0.2s;
+}
+.ow-tab .nav.nav-pills{
+    padding-bottom: 34px;
+    border-bottom: 1px solid #30323b;
+    margin-bottom: 30px;
+}
+.nav-pills .nav-item:last-child .nav-link{
+    margin-right: 0;
+}
+.ow-tab .uprofile-detail{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.ow-tab .uprofile-detail figure{
+    position: relative;
+    display: block;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0 0 0;
+}
+.ow-tab .uprofile-detail form{
+    position: relative;
+    margin-left: 20px;
+}
+.ow-tab .uprofile-detail form span{
+    color: #fff;
+}
+.ow-tab  form.upform .form-control{
+    background-color: transparent;
+    color: #fff;
+    border-width: 0 0 1px 0;
+    border-radius: unset;
+    border-color: #464951;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.ow-tab  form.upform textarea{
+    resize: unset;
+}
+.ow-tab  form.upform button{
+    margin-top: 50px;
+}
+.ow-tab form.upform .form-control:focus{
+    border-color:#f7941e;
+}
+input.form-control::placeholder,
+textarea.form-control::placeholder {
+    color: #ffffff;
+}
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  .file-input label {
+    display: block;
+    background-color: #f7941e;
+    border-color: #f7941e;
+    color: #181b25;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+    min-width: 136px;
+    font-weight: 500;
+    height: 39px;
+    text-transform: capitalize;
+    background: #f7941e;
+    width: 136px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .file-input label:focus{
+    background: unset;
+    border: 1px solid #f7941e;
+    color: #f7941e;
+  }
+  .mobile-logo{
+      display: none;
+  }
+/* oxexchange */
+.oxexchange-body .owallet-offer{
+    position: relative;
+}
+.oxexchange-body .oxbalance-card{
+    width: 100%;
+    color: #181b25;
+    background-image: url('../images/balane-bg.png');
+    background-size: cover;
+    height: 170px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+}
+.oxexchange-body .oxbalance-card::after{
+content: '';
+position: absolute;
+display: block;
+width: 90px;
+height: 90px;
+background-image: url('../images/balance-bg-icon.png');
+background-size: cover;
+bottom: 0;
+right: 20px;
+
+}
+.oxexchange-body .oxbalance-card p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.oxexchange-body .oxbalance-card h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 35px;
+}
+.oxexchange-body .oxproduct-sell{
+    background-color: #30323b;
+    border-radius: 15px;
+    height: 170px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px 30px;
+    color: #fff;
+}
+.oxexchange-body .oxproduct-sell h4{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.oxexchange-body .oxproduct-sell .oxp-btn button:nth-child(1){
+    margin-right: 3px;
+}
+.owl-body.oxwallet-body.oxexchange-body{
+    margin-bottom: 60px;
+}
+.oxe-chartwrap{position: relative;}
+.oxe-chartwrap .oxe-chart-detail{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.oxe-chartwrap .oxe-chart-detail .chart-name{
+    position: relative;
+    color: #ffffff;
+}
+.oxe-chart-detail .chart-name h4{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.oxe-chart-detail .chart-name p{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.oxe-chart-detail .oxe-chart-form-info form{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.oxe-chart-form-info input.form-control.drp {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    display: block;
+}
+.oxe-chart-form-info form .form-group:nth-child(1){
+    position: relative;
+    display: block;
+    margin-right: 30px;
+}
+.oxe-chart-form-info form .form-group:nth-child(1) span{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    right: -12px;
+    overflow: hidden;
+}
+.oxe-chart-form-info form .form-group:nth-child(1) span img{
+    object-fit: contain;
+}
+.oxe-chart-form-info select.form-control {
+    border: 1px solid #fff;
+    background-color: unset;
+    color: #fff;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.oxe-chart-form-info .form-group{
+    margin-bottom: 0;
+}
+.oxe-chart-form-info select.form-control:not([size]):not([multiple]) {
+    height: 50px;
+}
+.oxe-chartwrap figure{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.owallet-right .owt-right .owt-option a:nth-child(1):after {
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    content: '';
+    background-color: red;
+    top: 4px;
+    right: 3px;
+    border-radius: 50%;
+}
+.oxe-chartwrap .owallet-table{
+    margin-top: 50px;
+}
+.oxe-chart-form-info select option{
+    background-color: #181b18;
+}
+.modal-dialog {
+    position: relative;
+}
+.modal-dialog select option{
+    background-color: #181b18;
+}
+.modal-dialog select.form-control:not([size]):not([multiple]){
+    height: auto;
+}
+.modal-dialog .modal-content{
+    background-color: #181b25;
+    color: #fff;
+    padding: 30px 45px;
+    border-radius: 15px;
+    border: 1px solid #ffffff73;
+}
+.modal-dialog .modal-header{
+    border-bottom: unset;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+.modal-dialog form .form-group span{
+    font-size: 16px;
+    color: #414a58;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 20px;
+}
+.modal-dialog form .form-group .icons{
+    position: absolute;
+    top: 0;
+    right: 10px;  
+}
+.modal-dialog form .form-group .icons img{
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.modal-dialog form .form-group .avalue{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+}
+.modal-dialog form p{
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+}
+.modal-dialog form .form-group .avalue span{
+    font-size: 16px;
+    color: #414a58;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    right: 10px;
+}
+.modal-dialog form .form-group .avalue span.orange{
+    color: #e78733;
+}
+.modal-dialog .modal-header h5{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: block;
+}
+.modal-dialog .modal-header .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f7941e;
+    border-radius: 50%;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    color: #181b25;
+    line-height: 20px;
+    text-shadow: unset;
+    opacity: 1;
+}
+.modal-dialog form .form-control{
+    background-color: transparent;
+    color: #fff;
+    border-width: 0 0 1px 0;
+    border-radius: unset;
+    border-color: #464951;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.modal-dialog form .form-control.addnewadd{
+    padding: 5px 0px;
+}
+.modal-dialog form .form-group{
+    margin-bottom: 30px;
+}
+.modal-dialog form  .form-control:focus{
+    border-color:#f7941e;
+}
+.modal-dialog form input.form-control::placeholder,
+.modal-dialog form textarea.form-control::placeholder {
+    color: #ffffff;
+}
+.modal-dialog button.btn.btn-orange{
+    position: relative;
+    display: block;
+    width: 216px;
+    height: 53px;
+    margin: 30px auto 0;
+    font-size: 16px;
+}
+.modal-dialog a.btn.btn-orange{
+    position: relative;
+    display: flex;
+    width: 216px;
+    height: 53px;
+    margin: 30px auto 0;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.modal-dialog form button.btn.btn-orange i{
+    padding-right: 12px;
+}
+.modal-dialog .modal-header .close:focus{
+    outline: none;
+}
+.modal-dialog .payment-wrap{
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.modal-dialog .payment-wrap figure{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 30px;
+}
+.modal-dialog .payment-wrap h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.modal-dialog .payment-wrap p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/*24-09-2021*/
+.form-group select{
+    background-color: transparent;
+    color: #ddd;
+   /* border-width: 0 0 1px 0;*/
+    border-radius: unset;
+    border-color: #464951;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;width: 100%;border-left: 0px;border-right: 0px;border-top: 0px;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.oxwalletprofile .form-group label{width: 100%;color: #fff;}
+
+
+.usrpencl i{font-size: 18px;
+    color: #fff;
+    background: #f7941e;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: -30px;
+    bottom: 5px; }
+
+
+
+ .braintree-option:first-child{
+     border-radius: 0;
+ }  
+ header.header_menu .header_wal ul.navbar-nav li{
+     display: block;
+ }
+
+
+
+/*============================
+   Responsive
+ =========================================*/
+
+
+@media(max-width: 1439px){
+    .owallet-right .owt-left{
+        margin-right: 0;
+    }
+    .owallet-right .owt-left h5{
+        margin-right: 5px;
+    }
+    .nf-list-item .nfi-middle .nfim-top-info a{
+        margin-bottom: 5px;
+    }
+    .oxexchange-body .oxproduct-sell .oxp-btn button {
+        min-width: 100px;
+    }
+}
+
+@media(max-width:1199px){
+    .owallet-right .owt-left form .form-control{
+        width: 250px;
+    }
+    .dashboard-main .owallet-wrap .owallet-left {
+        width: calc(100% - 90%);
+    }
+    #sidebar .list-group-item{
+       margin: 0 auto 5px;
+    }
+    .dashboard-main a.list-group-item span{
+        display: none;
+    }
+    .nf-list-item .nfi-middle .nfi-item-image{
+        height: 150px;
+    }
+    .mobile-logo{
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        margin: 0 auto 30px;
+    }
+    .dashboard-main a.logo{
+        display: none;
+    }
+    .owl-body.oxwallet-body .app-stocks .oxwalllet-as{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .owallet-table .owt-table{
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 991px){
+
+    header.header_menu .header_wal .navbar-nav {
+        margin-top: 0 !important;
+        border-top: 0  !important;
+        padding-top: 0  !important;
+    }
+
+
+
+   header.header_menu .header_wal {
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    display: block;
+    position: absolute;
+    background: #0f121b !important;
+    float: none;
+}
+
+header.header_menu .header_wal nav.navbar {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    z-index: 11;
+    background: #0f121b !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-bear {
+    z-index: 999;
+}
+
+header.header_menu .header_wal nav.navbar {
+    padding-right: 0;
+}
+
+header.header_menu .container-fluid {
+    padding-right: 14px;
+}
+
+.top-bear {
+    width: 300px;
+}
+header.header_menu .container-fluid .row {
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-toggler {
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+header.header_menu .container-fluid .navbar-nav {
+    margin-top: 23px;
+    border-top: 1px solid #313131;
+    padding-top: 19px;
+}
+    .nft-feature-main .nft-feature-list .nf-list-item{
+        margin-bottom: 15px;
+    }
+    .owallet-offer .app-stocks .app-subscribe{
+        flex-wrap: wrap;
+    }
+    .dashboard-main a img{
+        width: 100%;
+    }
+    .owallet-right .top-nav{
+        align-items: center;
+    }
+    .owallet-right .owt-right{
+        margin-top: 10px;
+    }
+    .dashboard-main #sidebar a.list-group-item.active{
+        border-radius: 10px;
+    }
+    #sidebar .list-group-item{
+        padding: 8px 12px;
+    }
+    .ow-tab .uprofile-detail{
+        margin-bottom: 50px;
+    }
+    .ow-tab .uprofile-detail figure{
+        width: 65px;
+        height: 65px;
+    }
+    .mobile-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .owallet-operation .owallet-btn a i{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .owallet-operation .owallet-btn a{
+        font-size: 18px;
+    }
+    .owallet-table .owt-table table tr td:nth-child(1), 
+    .owallet-table .owt-table table tr th:nth-child(1) {
+        width: 60%;
+    }
+    .owallet-offer .app-stocks .app-subscribe a{
+        margin-bottom: 5px;
+    }
+    .dashboard-main .owallet-right{
+        margin-bottom: 50px;
+    }
+    .nf-list-item .nfi-middle .nfim-top-info a {
+        margin-bottom: 0px;
+    }
+    .owallet-table .owt-table table tr td, .owallet-table .owt-table table tr th{
+        padding: 15px 10px;
+    }
+    .oxexchange-body .oxproduct-sell .oxp-btn button:nth-child(1){
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .modal-dialog .payment-wrap figure{
+        width: 70px;
+        height: 70px;
+    }
+    .owallet-right .owallet-offer .app-stocks::after{
+        opacity: 0.5;
+    }
+}
+@media(max-width:768px){
+    .owallet-right .owt-left{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 767px){
+
+    .navbar-light .navbar-toggler {
+        padding: 10px;
+        background: transparent;
+        position: relative;
+        top: 6px;
+        left: 4px;
+        background-image: none;
+        border: 0;
+        margin-top: 3px;
+        margin-bottom: 4px;
+
+    } 
+    .navbar-light .navbar-toggler:after {
+       font-family: 'Font Awesome 5 Free';
+       font-weight: 900;
+       content: "\f0c9";
+       color: #fff;
+       font-size: 20px;
+    }
+.header_wal .bg-light div#navbarNav{
+
+padding: 20px;
+
+}
+.header_wal .bg-light div#navbarNav li{
+    margin-bottom: 10px;
+    
+  
+}
+.owallet-right .owallet-offer .col-md-4{
+    margin-bottom: 10px;
+}
+    .owallet-right .owl-body {
+        padding: 0 0px 0 15px;
+    }
+    .owallet-right .owallet-offer .discover-part,
+    .owallet-right .owallet-offer .join-part{
+        margin-bottom: 15px;
+    }
+    .ow-tab form.upform .form-control{
+        font-size: 14px;
+        padding: 0 0 20px;
+    }
+    .ow-tab form.upform button {
+        margin-top: 30px;
+    }
+    .ow-tab .nav.nav-pills {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #30323b;
+        margin-bottom: 20px;
+    }
+    .ow-tab .nav.nav-pills {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .ow-tab .nav-pills .nav-link{
+        font-size: 16px;
+        margin-right: 60px;
+    }
+    .owl-body.oxwallet-body .oxwallet-card{
+        margin-bottom: 15px;
+    }
+    .owallet-operation .owallet-btn a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .owallet-operation .owallet-btn a {
+        font-size: 16px;
+    }
+    .owl-body.oxwallet-body .owallet-operation {
+        margin-bottom: 20px;
+    }
+    .owallet-right .top-nav{
+        padding-bottom: 30px;
+    }
+    .owallet-right .owallet-offer{
+        margin-bottom: 30px;
+    }
+    .owl-body.oxwallet-body .oxwallet-card i{
+        font-size: 17px;
+        margin-bottom: 14px;
+    }
+    .owl-body.oxwallet-body .oxwallet-card span {
+        font-size: 16px;
+    }
+    .oxe-chart-form-info input.form-control.drp{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .oxe-chart-form-info form .form-group:nth-child(1) span{
+        top: 3px;
+    }
+    .oxe-chart-form-info select.form-control{
+        font-size: 14px;
+    }
+    .modal-dialog .modal-content{
+        padding: 20px;
+    }
+    .modal-dialog .modal-header{
+        padding: 10px;
+    }
+    .modal-dialog form .form-group {
+        margin-bottom: 20px;
+    }
+    .modal-dialog form .form-control{
+        padding: 0 0 20px;
+    }
+    .modal-dialog form button.btn.btn-orange{
+        width: 160px;
+        margin: 20px auto 0;
+    }
+    .modal-dialog button.btn.btn-orange{
+        width: 170px;
+    }
+    .modal-dialog .payment-wrap figure{
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+    }
+    .mobile-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:575px){
+    #sidebarToggle {
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 5px;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        z-index: 5;
+    }
+    .owallet-right .owt-right .owt-option a:nth-child(1):after{
+        top: 1px;
+    }
+    #sidebar .list-group{
+        display: none;        
+        transition: all 05s ease-in;
+        margin-top: 50px;
+    }
+    .dashboard-main a.logo{
+        padding: 0 0 15px;
+        display: none;
+    }
+    .owallet-right .owallet-offer{
+        margin-bottom: 30px;
+    }
+    .dashboard-main .owallet-wrap .owallet-left {
+        width: 50px;
+        position: absolute;
+        display: block;
+    }
+    .owallet-right .top-nav{
+        padding: 60px 0 40px 0;
+    }
+    .owallet-right .owl-body {
+        padding: 0;
+    }
+    .owallet-right .owt-right{
+        width: 100%;
+    }
+    .owallet-right .owt-right .owt-option a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .owallet-right .owt-right .owt-option a img {
+        width: 12px;
+    }
+    .owallet-right .owt-right .owt-option a:last-child{
+        font-size: 12px;
+    }
+    #sidebar{
+        border: 0;
+        padding: 0;
+        overflow: visible;
+        margin-top: 10px;
+    }
+    .owallet-right .owt-left form .form-control{
+        width: 200px;
+    }
+    .owallet-right .owt-left h5{
+        font-size: 12px;
+    }
+    .owallet-right .owt-right a.upload{
+        font-size: 12px;
+    }
+    .mobile-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .ow-tab .uprofile-detail figure {
+        width: 55px;
+        height: 55px;
+    }
+    .owallet-operation .owallet-btn a {
+        font-size: 16px;
+    }
+    .owallet-operation .owallet-btn a i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    .oxwallet-body .owallet-table table{
+        margin-bottom: 0;
+    }
+    .owl-body.oxwallet-body .owallet-operation h6{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .owallet-table h5{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .btn.btn-orange{
+        min-width: 110px;
+    }
+    .oxexchange-body .oxbalance-card{
+        margin-bottom: 15px;
+    }
+    .oxexchange-body .oxproduct-sell .oxp-btn button:nth-child(1){
+        margin-bottom: 0;
+    }
+    .oxe-chart-form-info input.form-control.drp{
+        padding: 0 10px 0 0;
+    }
+    .oxe-chartwrap .oxe-chart-detail{
+        flex-wrap: wrap;
+    }
+    .oxe-chart-form-info form .form-group:nth-child(1) span{
+        top: 0;
+    }
+    .oxe-chart-detail .oxe-chart-form-info form{
+        flex-wrap: wrap;
+    }
+    .oxe-chart-form-info form .form-group:nth-child(1){
+        margin: 10px 25px 10px 0;
+    }
+    #sidebar .list-group-item {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
+@media (min-width:991px) {
+
+    header.header_menu .header_wal button.navbar-toggler {
+        display: none;
+    }   
+    .header_wal .bg-light {
+        display: flex;
+        align-items: end;
+    }
+
+}
+@media (max-width:940px) and (min-width:880px){
+    .owallet-right .owt-left form .form-control {
+    width: auto;
+}
+
+.owallet-right .owt-left h5 {
+    max-width: 108px;
+}
+
+.owallet-right .top-nav {
+    padding: 30px 0px 50px 10px;
+}
+}
+@media (max-width:380px){
+    .top-bear form select {
+    padding: 6px 5px;
+}
+
+.top-bear .search {
+    margin-right: 5px;
+}
+
+.top-bear form .search input[type="search"] {
+    padding: 5px 26px 5px 9px;
+}
+
+.top-bear .search .search_h {
+    right: 8px;
+}
+
+.top-bear .search .search_h img {
+    height: 18px;
+}
+
+.top-bear {
+    width: 251px;
+}
+}

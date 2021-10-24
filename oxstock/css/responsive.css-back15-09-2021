@@ -1,0 +1,172 @@
+@media only screen and (min-width:1700px) and (max-width:1799px)
+
+{	
+
+	
+
+}
+
+@media only screen and (min-width:1600px) and (max-width:1699px)
+
+{	
+
+	
+
+}
+
+@media only screen and (min-width:1500px) and (max-width:1599px)
+
+{	
+
+	
+}
+
+@media only screen and (min-width:1400px) and (max-width:1499px)
+
+{	
+
+	
+}
+
+@media only screen and (min-width:1300px) and (max-width:1399px)
+
+{	 
+
+   #content{padding: 30px 0 30px 0 !important;}	
+}
+
+@media only screen and (min-width:1200px) and (max-width:1299px)
+
+{	
+
+	header .navbar-default .nav-rr li.Register a{padding: 4px 9px !important;}
+	#section-nfts {padding: 60px 0 60px 0 !important;}
+	#content{padding: 30px 0 30px 0 !important;}	
+	
+}
+
+@media only screen and (min-width:1025px) and (max-width:1199px)
+
+{	
+
+	#content{padding: 30px 0 30px 0 !important;}	
+}
+
+@media only screen and (max-width: 1024px)
+
+{	
+   header .navbar-default .nav-rr li.Register a{padding: 4px 9px !important;}
+   #section-nfts, #section-collections, #section-popular, #section-steps{padding: 50px 0 50px 0 !important;}
+   header .navbar-default .nav-rr li a{padding: 6px 0px !important;}
+   .priching ul li h3{font-size: 16px;}
+   .priching ul li p {font-size: 14px;}	
+
+   #content{padding: 30px 0 30px 0 !important;}	
+ 
+}
+
+@media only screen and (min-width:992px) and (max-width:1024px)
+
+{	
+
+	
+}
+
+@media only screen and (max-width: 991px)
+
+{	
+
+	.ff_menu ul li{margin: 0 20px !important;}
+	.footer {padding: 50px 0 0 !important;text-align: center !important;}
+	.pricing-wrapper{padding-top: 10px !important;}
+	.foot_bb{justify-content: center !important;}
+	header .navbar-default .nav-rr {width: 30% !important;}
+	#section-hero{padding: 20px 0 20px 0 !important;}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+
+{	
+  header .navbar-default .navbar-collapse li a{padding: 6px 6px !important;}
+  .priching ul li h3 {font-size: 14px !important;}
+
+  .item_filter_group{ padding: 17px !important;}
+
+	
+}
+
+@media only screen and (max-width: 767px)
+
+{	
+
+.logo{text-align: center !important;}
+.top-bear .col-md-8{justify-content: center !important;}
+.top-bear .logo img{padding-bottom: 15px;}	
+header .navbar-default .nav-rr {width: 20% !important;}
+.ff_menu ul li a, .f_menu ul li a {font-size: 12px !important;}
+.foot_bb{padding-bottom: 16px !important;}
+
+}	
+
+@media only screen and (min-width: 640px) and (max-width: 767px)
+
+{	
+
+	header .navbar-default .nav-rr{justify-content: center;align-items: center  !important;display: flex  !important;width: 30% !important;}
+}
+
+@media only screen and (max-width: 639px)
+
+{	
+header .navbar-default .nav-rr{justify-content: center;align-items: center  !important;display: flex  !important;width: 40% !important;}
+.priching ul li h3 {font-size: 12px !important;}	
+.priching ul li p {font-size: 11px !important;}
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 639px)
+
+{	
+
+	
+}
+
+@media only screen and (max-width: 575px)
+
+{	
+
+	.footer .container{width: inherit !important;}
+	.nft__item_wrap{height: auto !important;}
+	.text-light h1{font-size:28px !important;}
+	h2{font-size: 28px !important;}
+}
+
+@media only screen and (max-width: 479px)
+
+{	
+
+	h2{font-size: 24px !important;}
+}
+
+
+
+@media only screen and (max-width: 399px) 
+
+{	
+
+	
+}
+
+
+
+@media only screen and (max-width: 359px) 
+
+{
+
+	header .navbar-default .nav-rr{width: 60% !important;}
+}
+
+	
+
+img {max-width: 100%; height: auto;}
