@@ -1,4 +1,4 @@
 # OXstock-php-braintree
 
 <h2>live website</h2>
-http://oxstocks.com/oxstock
+http://oxstocks.com
